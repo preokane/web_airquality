@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.jumbotron { 
+  padding: 30px; /* fills out the jumbotron */
+  background-color: #111;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 50px;
+}
+
+.container {
+  width: 100%; /* specify a width */
+  margin: 0;  /* centers the container */
+  padding: 0; /* adds some padding to the left and right*/
+}
+
+.jumbotron .container { 
+  max-width: 100%; /* allows the jumbotron to adjust on smaller widths */
+  background-color: #222;
+}
+
+.jumbotron h1 { 
+  text-align: center; /* centers the heading */
+  color: #DDD;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
