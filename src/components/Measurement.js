@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import '../Location.css';
 
 class Measurement extends Component {
 
 
     render(){
+
         return(
-        <p>{this.props.measurement.parameter} {this.props.measurement.unit} {this.props.measurement.value}</p>
+        <p className="measurement"><b id="measureParameter">{this.props.measurement.parameter} : </b> {this.props.measurement.value} {this.props.measurement.unit}</p>
         );
     }
 

@@ -7,10 +7,14 @@ class LocationInfo extends Component {
 
     render(){
         return(
-            <div>
+            <div className="locationContainer">
                 {this.props.locations.map((location,i) => <div className="locationDiv" key={i}>
-                    {location.location}
-                    {location['measurements'].map((measure,ind) => <Measurement key={ind} measurement={measure}/>)}                
+                    <p className="locationName">Location: <b>{location.location}</b></p>
+                    <br/>
+                    <br/>
+                    <div className="measureContainer">
+                    {location['measurements'].map((measure,ind) => <Measurement key={ind} measurement={measure}/>)}       
+                    </div>         
                     </div>)}
             </div>
         );
